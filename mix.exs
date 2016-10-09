@@ -3,7 +3,7 @@ defmodule Eql.Mixfile do
 
   def project do
     [
-      app: :eql,
+      app: :app,
       version: "0.1.0",
       elixir: "~> 1.3",
       build_embedded: Mix.env == :prod,
@@ -14,7 +14,7 @@ defmodule Eql.Mixfile do
 
   def application do
     [
-      mod: {Eql, []},
+      mod: {App, []},
       applications: [:cowboy, :plug, :absinthe, :absinthe_plug]
     ]
   end
@@ -26,7 +26,8 @@ defmodule Eql.Mixfile do
       {:absinthe, "~> 1.1.10"},
       {:absinthe_plug, "~> 1.1"},
       {:mongo, "~> 0.5.4"},
-      {:poison, "~> 1.3.0"}
+      {:poison, "~> 1.3.0"},
+      {:vex, "~> 0.6.0"}
     ]
   end
 end
