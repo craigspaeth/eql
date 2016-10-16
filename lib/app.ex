@@ -28,7 +28,10 @@ defmodule App do
   use Application
 
   def start(_type, _args) do
-    Db.init()
-    Plug.Adapters.Cowboy.http Router, []
+    out = GraphQL.execute  Model.fields_to_schema(Post.fields()), "{greeting}"
+    IO.puts inspect out
+    out
+    # Db.init()
+    # Plug.Adapters.Cowboy.http Router, []
   end
 end

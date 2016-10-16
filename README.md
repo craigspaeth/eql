@@ -1,24 +1,15 @@
 # Eql
 
-**TODO: Add description**
+Experimenting with Elixir + GraphQL.
 
-## Installation
+# Getting Started
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+1. Install Elixir `$ brew install elixir`
+2. Install dependencies `mix deps.get`
+3. Start Mongo `mongod`
+4. Start the server `iex -S mix`
 
-  1. Add `eql` to your list of dependencies in `mix.exs`:
+# License
 
-    ```elixir
-    def deps do
-      [{:eql, "~> 0.1.0"}]
-    end
-    ```
-
-  2. Ensure `eql` is started before your application:
-
-    ```elixir
-    def application do
-      [applications: [:eql]]
-    end
-    ```
+MIT
 

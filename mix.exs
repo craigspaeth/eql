@@ -15,7 +15,7 @@ defmodule Eql.Mixfile do
   def application do
     [
       mod: {App, []},
-      applications: [:cowboy, :plug, :absinthe, :absinthe_plug]
+      applications: [:cowboy, :plug, :absinthe, :absinthe_plug, :graphql]
     ]
   end
 
@@ -25,6 +25,7 @@ defmodule Eql.Mixfile do
       {:plug, "~> 1.2.2"},
       {:absinthe, "~> 1.1.10"},
       {:absinthe_plug, "~> 1.1"},
+      {:graphql, "~> 0.3"},
       {:mongo, "~> 0.5.4"},
       {:poison, "~> 1.3.0"},
       {:vex, "~> 0.6.0"}
